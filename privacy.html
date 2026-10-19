@@ -31,7 +31,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #2A2A30;color:#6F69
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">What this meeting costs — Apple&nbsp;Watch app · Last updated 18 October 2026</p>
+<p class="sub">What this meeting costs — Apple&nbsp;Watch app · Last updated 19 October 2026</p>
 
 <div class="box">
 <p><strong>This app records your purchases, and the identifiers that come with them.</strong>
@@ -67,15 +67,19 @@ installation.</p>
 <p>When you buy the one-time unlock, leave a tip, or restore a previous purchase, Apple performs
 the transaction through the App&nbsp;Store; we never see your payment details, your
 Apple&nbsp;Account, or anything else about you. The RevenueCat library then reports the
-transaction — product, price, currency, date. It also reports a purchase it finds on the watch
-by itself, such as one restored or shared through Family&nbsp;Sharing.</p>
+transaction — product, price, currency, date. It also reports, by itself, a purchase it finds
+on the watch that it has not reported yet — for example after the app is reinstalled — and
+every change the App&nbsp;Store announces to the watch: a purchase restored, shared through
+Family&nbsp;Sharing, or refunded.</p>
 <p>Every request to RevenueCat carries:</p>
 <ul>
   <li>an anonymous identifier the library creates for this installation and keeps;</li>
   <li>the identifier Apple gives this app on this watch (the identifier for vendor), which is
       the same for every app from the same developer and is not the advertising identifier;</li>
   <li>the watch model, watchOS version, language and region settings, App&nbsp;Store country,
-      and the app's name and version.</li>
+      and the app's name and version;</li>
+  <li>the IP address that any request over the internet carries, which RevenueCat uses to work
+      out the App&nbsp;Store country and does not keep.</li>
 </ul>
 <p>If their service is unreachable, the app behaves exactly the same: purchases are verified by
 Apple on the watch, not by RevenueCat. A tip is reported the same way, and it still unlocks
@@ -104,12 +108,14 @@ above, and nothing else.</p>
   everything, which also removes the rate, the presets and every preference and returns the app
   to its first-launch screen. A purchase is not erased: it belongs to your Apple&nbsp;Account,
   not to the watch;</li>
-  <li>delete the app from your Apple&nbsp;Watch, which removes everything it stored.</li>
+  <li>delete the app from your Apple&nbsp;Watch, which removes everything it stored on the
+  watch.</li>
 </ul>
 <p>Your rate, receipts and presets exist nowhere but the watch, so there is no copy of them for
-us to delete on your behalf. The records held by RevenueCat are not linked to your name or
-Apple&nbsp;Account; if you want them gone anyway, write to the address below and we will request
-their deletion.</p>
+us to delete on your behalf. One thing outlives deleting the app: the purchase records held by
+RevenueCat, which stay on their service until they are deleted there. They are not linked to
+your name or Apple&nbsp;Account; if you want them gone anyway, write to the address below and we
+will have them deleted.</p>
 
 <h2>Changes to this policy</h2>
 <p>If the app ever starts doing something this page does not describe, this page changes first.
